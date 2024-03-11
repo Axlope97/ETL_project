@@ -26,7 +26,7 @@ def Load():
         table_name = df.name
 
         if len(df.columns) == 0:
-            raise ValueError(f"El DataFrame {table_name} no tiene columnas.")
+            raise ValueError(f"The DataFrame {table_name} has no columns.")
 
         # Taking data type and adding to columns
         column_types = {col: str(df[col].dtype) for col in df.columns}
